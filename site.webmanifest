@@ -1,0 +1,13 @@
+{
+  "name": "DeCarbonMine",
+  "short_name": "DeCarbonMine",
+  "description": "Plataforma de Ativos Industriais de Descarbonização.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0c1728",
+  "theme_color": "#123840",
+  "icons": [
+    { "src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
