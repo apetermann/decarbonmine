@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página não encontrada — DeCarbonMine</title>
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#123840" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="icon" href="assets/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="assets/favicon-32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav is-scrolled" id="nav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="index.html" aria-label="DeCarbonMine">
+        <img class="nav__logo-light" src="assets/logo-full-light.png" alt="DeCarbonMine" />
+        <img class="nav__logo-dark" src="assets/logo-full.png" alt="" aria-hidden="true" />
+      </a>
+      <div class="nav__right">
+        <div class="nav__menu" id="navMenu">
+          <nav class="nav__links" aria-label="Navegação principal">
+            <a href="index.html" data-i18n="nav.home">Início</a>
+            <a href="solucao.html" data-i18n="nav.solution">Solução</a>
+            <a href="como-atuamos.html" data-i18n="nav.how">Como Atuamos</a>
+            <a href="contato.html" data-i18n="nav.contact">Contato</a>
+          </nav>
+          <a class="btn btn--pill nav__cta" href="contato.html" data-i18n="nav.cta">Falar com a DCM</a>
+        </div>
+        <div class="nav__actions">
+          <button class="lang" data-lang-toggle aria-label="Switch to English">EN</button>
+          <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="notfound">
+      <span class="notfound__code">404</span>
+      <h1 data-i18n="nf.title">Página não encontrada</h1>
+      <p data-i18n="nf.text">A página que você procura não existe ou foi movida. Vamos te levar de volta ao caminho certo.</p>
+      <a href="index.html" class="btn btn--solid btn--lg"><span data-i18n="nf.cta">Voltar ao início</span> <span class="arrow">→</span></a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand footer__logo">
+        <img src="assets/logo-full-light.png" alt="DeCarbonMine" />
+        <p data-i18n="foot.tagline">Plataforma de Ativos Industriais de Descarbonização.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Rodapé">
+        <a href="solucao.html" data-i18n="foot.nav_solution">A Solução</a>
+        <a href="como-atuamos.html" data-i18n="foot.nav_how">Como Atuamos</a>
+        <a href="contato.html" data-i18n="foot.nav_contact">Contato</a>
+        <a href="privacidade.html" data-i18n="consent.privacy">Política de Privacidade</a>
+      </nav>
+      <div class="footer__meta">
+        <span>© <span id="year"></span> DeCarbonMine — <span data-i18n="foot.rights">Todos os direitos reservados.</span></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+  <script src="analytics.js"></script>
+</body>
+</html>
