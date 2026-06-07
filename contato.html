@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n-title="meta.contact_title">Contato — DeCarbonMine</title>
+  <meta name="description" content="Fale com a DeCarbonMine para estruturar ativos de descarbonização industrial." />
+  <link rel="canonical" href="https://decarbonmine.com/contato.html" />
+  <meta name="theme-color" content="#123840" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="DeCarbonMine" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:url" content="https://decarbonmine.com/contato.html" />
+  <meta property="og:title" content="Contato — DeCarbonMine" />
+  <meta property="og:description" content="Fale com a DeCarbonMine para estruturar ativos de descarbonização industrial." />
+  <meta property="og:image" content="https://decarbonmine.com/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contato — DeCarbonMine" />
+  <meta name="twitter:description" content="Fale com a DeCarbonMine para estruturar ativos de descarbonização industrial." />
+  <meta name="twitter:image" content="https://decarbonmine.com/assets/og-image.jpg" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="icon" href="assets/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="assets/favicon-32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo" data-i18n="a11y.skip">Pular para o conteúdo</a>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="index.html" aria-label="DeCarbonMine">
+        <img class="nav__logo-light" src="assets/logo-full-light.png" alt="DeCarbonMine" />
+        <img class="nav__logo-dark" src="assets/logo-full.png" alt="" aria-hidden="true" />
+      </a>
+      <div class="nav__right">
+        <div class="nav__menu" id="navMenu">
+          <nav class="nav__links" aria-label="Navegação principal">
+            <a href="index.html" data-i18n="nav.home">Início</a>
+            <a href="solucao.html" data-i18n="nav.solution">Solução</a>
+            <a href="como-atuamos.html" data-i18n="nav.how">Como Atuamos</a>
+            <a href="contato.html" aria-current="page" data-i18n="nav.contact">Contato</a>
+          </nav>
+          <a class="btn btn--pill nav__cta" href="contato.html" data-i18n="nav.cta">Falar com a DCM</a>
+        </div>
+        <div class="nav__actions">
+          <button class="lang" data-lang-toggle aria-label="Switch to English">EN</button>
+          <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <header class="page-header">
+      <div class="page-header__glow" aria-hidden="true"></div>
+      <div class="page-header__inner">
+        <span class="section__index section__index--light" data-i18n="cont.hero_index">Contato</span>
+        <h1 class="page-header__title" data-i18n-html="cont.hero_title">Vamos estruturar o próximo <em>ativo de descarbonização.</em></h1>
+        <p class="page-header__lede" data-i18n="cont.hero_lede">Conte sobre sua operação, suas metas climáticas e os projetos parados. Respondemos com um caminho prático para transformar isso em ativo.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact">
+          <!-- Info -->
+          <aside class="contact__info">
+            <div class="info-item">
+              <span class="info-item__label" data-i18n="cont.info_email_l">E-mail</span>
+              <a class="info-item__value" href="mailto:contato@decarbonmine.com">contato@decarbonmine.com</a>
+            </div>
+            <div class="info-item">
+              <span class="info-item__label" data-i18n="cont.info_subject_l">Para quê</span>
+              <span class="info-item__value" data-i18n="cont.info_subject_v">Originação, estruturação, financiamento e monetização de ativos de descarbonização.</span>
+            </div>
+            <div class="info-item">
+              <span class="info-item__label" data-i18n="cont.info_resp_l">Resposta</span>
+              <span class="info-item__value" data-i18n="cont.info_resp_v">Retornamos em até 2 dias úteis.</span>
+            </div>
+          </aside>
+
+          <!-- Form -->
+          <form class="form" id="contactForm" novalidate>
+            <div class="form__row">
+              <div class="field">
+                <label for="cName" data-i18n="cont.f_name">Nome</label>
+                <input type="text" id="cName" name="name" autocomplete="name" data-i18n-attr="placeholder:cont.f_name_ph" placeholder="Seu nome" aria-describedby="err-name" required />
+                <span class="field__error" id="err-name" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="cEmail" data-i18n="cont.f_email">E-mail</label>
+                <input type="email" id="cEmail" name="email" autocomplete="email" data-i18n-attr="placeholder:cont.f_email_ph" placeholder="voce@empresa.com" aria-describedby="err-email" required />
+                <span class="field__error" id="err-email" aria-live="polite"></span>
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="field">
+                <label for="cCompany" data-i18n="cont.f_company">Empresa</label>
+                <input type="text" id="cCompany" name="company" autocomplete="organization" data-i18n-attr="placeholder:cont.f_company_ph" placeholder="Nome da empresa" aria-describedby="err-company" required />
+                <span class="field__error" id="err-company" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="cSegment" data-i18n="cont.f_segment">Segmento</label>
+                <select id="cSegment" name="segment">
+                  <option value="" data-i18n="cont.f_seg_opt0">Selecione…</option>
+                  <option value="mineracao" data-i18n="cont.f_seg_min">Mineração</option>
+                  <option value="industria" data-i18n="cont.f_seg_ind">Indústria Pesada</option>
+                  <option value="agro" data-i18n="cont.f_seg_agro">Agroindústria</option>
+                  <option value="logistica" data-i18n="cont.f_seg_log">Logística &amp; Frotas</option>
+                  <option value="investidor" data-i18n="cont.f_seg_inv">Investidor / Fundo</option>
+                  <option value="outro" data-i18n="cont.f_seg_other">Outro</option>
+                </select>
+                <span class="field__error" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="field">
+              <label for="cMessage" data-i18n="cont.f_message">Mensagem</label>
+              <textarea id="cMessage" name="message" data-i18n-attr="placeholder:cont.f_message_ph" placeholder="Descreva sua operação, metas e projetos…" aria-describedby="err-message" required></textarea>
+              <span class="field__error" id="err-message" aria-live="polite"></span>
+            </div>
+            <button type="submit" class="btn btn--solid form__submit">
+              <span data-i18n="cont.f_submit">Enviar mensagem</span> <span class="arrow">→</span>
+            </button>
+            <div class="form__status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand footer__logo">
+        <img src="assets/logo-full-light.png" alt="DeCarbonMine" />
+        <p data-i18n="foot.tagline">Plataforma de Ativos Industriais de Descarbonização.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Rodapé">
+        <a href="solucao.html" data-i18n="foot.nav_solution">A Solução</a>
+        <a href="como-atuamos.html" data-i18n="foot.nav_how">Como Atuamos</a>
+        <a href="contato.html" data-i18n="foot.nav_contact">Contato</a>
+        <a href="privacidade.html" data-i18n="consent.privacy">Política de Privacidade</a>
+      </nav>
+      <div class="footer__meta">
+        <span>© <span id="year"></span> DeCarbonMine — <span data-i18n="foot.rights">Todos os direitos reservados.</span></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+  <script src="analytics.js"></script>
+</body>
+</html>
