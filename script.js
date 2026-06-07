@@ -89,7 +89,7 @@
      (e.g. Formspree "https://formspree.io/f/xxxxxxx" or your own API).
      While it contains "REPLACE", the form runs in DEMO mode: it validates
      and shows the success state without sending a real request. */
-  var FORM_ENDPOINT = "https://formspree.io/f/REPLACE_WITH_YOUR_ID";
+  var FORM_ENDPOINT = "https://formspree.io/f/mykaerpy";
 
   var form = document.getElementById("contactForm");
   if (form) {
