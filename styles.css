@@ -677,6 +677,77 @@ em { font-style: italic; }
 }
 
 /* ============================================================
+   MOBILE POLISH (phones)
+   ============================================================ */
+/* Dynamic viewport height: hero fills the screen without jumping
+   when the mobile browser address bar collapses/expands */
+.hero { min-height: 100svh; }
+
+@media (max-width: 560px) {
+  /* Rhythm — lighter section spacing on small screens */
+  .section { padding-block: 3.5rem; }
+  .section__head { margin-bottom: 2.2rem; }
+  .footer { padding-block: 3rem; }
+
+  /* Nav */
+  .nav__inner { padding-block: 1rem; gap: 1rem; }
+  .nav__logo img { height: 28px; }
+
+  /* Hero — tighter type scale, full-width actions */
+  .hero { padding-top: 6.5rem; padding-bottom: 3rem; }
+  .eyebrow { font-size: 0.72rem; margin-bottom: 1.4rem; }
+  .hero__title { font-size: clamp(2.1rem, 10.5vw, 2.6rem); margin-bottom: 1.4rem; }
+  .hero__lede { font-size: 1rem; margin-bottom: 1.8rem; }
+  .hero__actions { flex-direction: column; align-items: stretch; }
+  .hero__actions .btn { justify-content: center; }
+
+  /* Section titles */
+  .section__index { margin-bottom: 1rem; }
+  .section__title { font-size: 1.72rem; }
+  .section__intro { font-size: 1rem; margin-top: 1.1rem; }
+
+  /* Cards — compact padding for narrow columns */
+  .problem-card { padding: 1.5rem; }
+  .problem-card__num { font-size: 1.8rem; margin-bottom: 0.7rem; }
+  .aud-card { padding: 1.4rem; }
+  .layer { padding: 1.6rem 1.4rem; }
+  .service { padding: 1.5rem; }
+  .fly-step { padding: 1.5rem; }
+  .fly-step__num { width: 40px; height: 40px; margin-bottom: 0.9rem; }
+
+  /* Gap diagram — compress the vertical flow */
+  .gap { padding: 1.6rem 1.2rem; }
+  .gap__label { margin-bottom: 1.4rem; }
+  .gap__flow { gap: 0.5rem; margin-bottom: 1.5rem; }
+  .gap__node { padding: 0.85rem 1rem; font-size: 0.92rem; min-width: 0; flex-basis: auto; }
+  .gap__arrow { font-size: 1.1rem; }
+  .gap__note { font-size: 0.92rem; }
+
+  /* Partners — shorter cells */
+  .partner { min-height: 84px; padding: 1rem; }
+  .partner__logo { max-height: 36px; }
+
+  /* Video player */
+  .video-player__play { width: 64px; height: 64px; }
+  .video-player__play svg { width: 26px; height: 26px; }
+
+  /* Chips */
+  .chips { gap: 0.5rem; }
+  .chip { font-size: 0.8rem; padding: 0.45rem 0.9rem; }
+
+  /* CTA */
+  .cta__title { font-size: 2rem; }
+  .cta__lede { font-size: 1.02rem; margin-bottom: 2rem; }
+  .cta .btn--lg { width: 100%; justify-content: center; padding: 1.05rem 1.6rem; font-size: 0.98rem; }
+
+  /* Subpage headers + contact form */
+  .page-header { padding-top: 7rem; }
+  .page-header__title { font-size: clamp(1.9rem, 9vw, 2.4rem); }
+  .page-header__lede { font-size: 1rem; }
+  .form { padding: 1.4rem 1.2rem; }
+}
+
+/* ============================================================
    REDUCED MOTION
    ============================================================ */
 @media (prefers-reduced-motion: reduce) {
